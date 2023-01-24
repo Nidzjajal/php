@@ -1,0 +1,5 @@
+USER NAME:epiz_33276702//root
+PASSWORD:3wKKpIxUfiXd5PD//""
+my sql host name:sql210.epizy.com//localhost
+my sql database name:epiz_33276702_kbpccs//namedatabase
+web site:185.27.134.59

@@ -3,10 +3,11 @@ include('ass.php');
 ?>
 <html>
 <head>
-    <title>STRING REVERSE</title>
+    
+    <title>ODD OR EVEN</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <style>
-        body{
+       body{
            border:10px double orange;
              font-style:bold;
              font-weight:bold;
@@ -24,20 +25,19 @@ include('ass.php');
              font-weight:bold;
              margin-top:9px;
          }
-  
     </style>
 </head>
 <body>
-    <div class="container bg-info text-dark mt-4  p-4 w-50 ">
-        <div class="items">
-        <h2 class="text-center text-danger border-bottom">STRING REVERSE</h2>
+    <div class="container bg-info text-dark mt-4  p-4 w-50">
+        
+        <h2 class="text-center text-danger border-bottom">ODD OR EVEN</h2>
         <form method="POST">
         <div class="row p-1">
             <div class="col-3">
-                ENTER STRING :-
+               ENTER NUMBER :-
             </div>
             <div class="col-9">
-                <input type="text" class="form-control" name="number" placeholder="enter string to reverse ...." required/>
+                <input type="number" class="form-control" name="number" placeholder="enter number to calculate odd/even...." required/>
             </div>
         </div>
         <div class="row p-2">
@@ -48,19 +48,21 @@ include('ass.php');
             </div>
         </div>
         </form>
-        </div>
     </div>
+    
 </body>
 </html>
 <?php
 if(isset($_POST["btn"]))
 {
-    $no=($_POST["number"]);
-    $number=$no;
-    $sum=0;
-    $str=strrev($no);
+    $no=intval($_POST["number"]);
+    
+    if ($no%2==0)
+        $ans="EVEN Number...";
+    else 
+        $ans="ODD Number...";
     echo"<div class='container mt-3  w-50 p-2 bg-primary text-white'>";
-    echo "REVERSE STRING :"."<input type='text' value='$str'class='form-control'/>";
+    echo " ODD or EVEN :"."<input type='text' value='$ans'class='form-control'/>";
     echo"</div>";
 }
 ?>

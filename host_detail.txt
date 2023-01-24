@@ -1,0 +1,13 @@
+user name: epiz_33276702      //root
+
+password: 3wKKpIxUfiXd5PD      //password
+
+
+my sql host name:sql210.epizy.com     //localhost
+
+my sql data base name: 1)   epiz_33276702_kbpccs    //data base name
+                       2)   epiz_33276702_exam
+
+web site:185.27.134.59
+
+web site name: kbp-nidhi.epizy.com
